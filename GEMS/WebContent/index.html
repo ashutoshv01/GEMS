@@ -1,0 +1,72 @@
+<html>
+
+<head>
+    <title>GEMS</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class ="login">
+        <h1 style="color:white ;text-align:center">GEMS:Gymkhana Election Management System</h1>
+        <div class="form">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type = "button" class = "toggle-btn" onclick="login()">Login</button>
+                <button type = "button" class = "toggle-btn" onclick="register()">Register</button>
+            </div>
+
+            <form id ="log" class="input-group" action="logincheck.jsp" autocomplete="off" method="post">
+                <input type="text" class="input-field" name="username" placeholder="Roll No" required>
+                <input type="password" class="input-field" name ="password" placeholder="Password" required>
+                <input type ="submit" class="submit-btn" value="LogIn">
+            </form>
+            <form id ="register" class="input-group" action="reg.jsp" autocomplete="off" method="post">
+                <input type="text" class="input-field" name ="Name" placeholder="Name" required>
+                <input type="text" class="input-field" name ="Roll" placeholder="Roll No" required>
+                
+                <select class="input-field" name="Hall">
+					  <option value="AZ">Azad</option>
+					  <option value="MMM" selected>MMM</option>
+					  <option value="LBS">LBS</option>
+					  <option value="MS">MS</option>
+					  <option value="NH">Nehru</option>
+					  <option value="RK">RK</option>
+					  <option value="RP">RP</option>
+					  <option value="PH">Patel</option>
+					  <option value="LLR">LLR</option>
+					  <option value="HJB">HJB</option>
+					  <option value="BRH">BRH</option>
+					  <option value="JCB">JCB</option>
+					  <option value="SN">SN/IG</option>
+					  <option value="SNVH">Nivedita</option>
+					  <option value="MT">MT</option>
+				</select>
+
+                <input type="password" class="input-field" name ="Pass" placeholder="Password" required>
+                <input type="email" class="input-field" name ="Email" pattern=".+@iitkgp.ac.in" placeholder="Institute Email ID" required>
+                <input type="checkbox" class="check-box" name="IsCandi" value="Candidate"><span>Are you a Candidate?</span>
+                <input type ="submit" class="submit-btn" value ="Register">
+            </form>
+        </div>
+    </div>
+
+    <script>
+        var x =document.getElementById("log");
+        var y =document.getElementById("register");
+        var z =document.getElementById("btn");
+
+        function register(){
+            x.style.left ="-400px";
+            y.style.left ="50px";
+            z.style.left ="110px";
+        }
+        function login(){
+            x.style.left ="50px";
+            y.style.left ="450px";
+            z.style.left ="0px";
+        }
+    </script>
+
+</body>
+
+</html>

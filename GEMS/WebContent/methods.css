@@ -1,0 +1,94 @@
+.methods{
+  background: rgb(0, 196, 65);
+  color: #fff;
+  font-weight: bold;
+  border:none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background 0.23s;
+  border-radius: 15px;
+  font-size:25px;
+  outline:none;
+}
+
+.methods:hover {
+  background: #ff0000;
+}
+
+.logout{
+	position:absolute;
+	right:30px;
+	top:15px;
+}
+
+.chngpwd{
+	position:absolute;
+	right:200px;
+	top:15px;
+}
+
+.verify{
+	position:absolute;
+	left:200px;
+	top:15px;
+}
+
+.viewevent{
+	position:absolute;
+	left:10px;
+	top:200px;
+}
+
+.viewcandi{
+	position:absolute;
+	left:10px;
+	top:300px;
+}
+
+.favs{
+	position:absolute;
+	left:10px;
+	top:400px;
+}
+
+.remind{
+	position:absolute;
+	left:10px;
+	top:500px;
+}
+
+.remove{
+	position:absolute;
+	left:10px;
+	top:600px;
+}
+
+.chat{
+	position:absolute;
+	right:10px;
+	top:200px;
+}
+
+.slot{
+	position:absolute;
+	right:10px;
+	top:300px;
+}
+
+.details{
+	position:absolute;
+	right:10px;
+	top:400px;	
+}
+
+.addevent{
+	position:absolute;
+	right:10px;
+	top:500px;
+}
+
+.vote{
+	position:absolute;
+	left:700px;
+	top:200px;
+}
